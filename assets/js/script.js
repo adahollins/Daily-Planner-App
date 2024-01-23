@@ -21,9 +21,9 @@ input.addClass("description");
 
 saveBtn.addClass("saveBtn");
 
-$(".container").append(textHours);
-   // $(".container").append(input);
-   // $(".container").append(saveBtn);
+$(saveBtn).on("click", function(event) {
+
+});
 
     var newsDiv = $('<div class="row time-block">').appendTo($(".container"));
     $(newsDiv).each(function() {
@@ -34,8 +34,6 @@ $(".container").append(textHours);
     });
 
 //Changes colour depending on time
-};
-for (let i = 0; i < textHours.length; i++) {
 var currentTime = dayjs().format('hA');
 if (textHours == currentTime) {
     input.addClass("present");
@@ -44,6 +42,8 @@ if (textHours == currentTime) {
 } else {
     input.addClass("future");
 };
+
 };
+
 
 });
