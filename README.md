@@ -1,12 +1,12 @@
 # Daily-Planner-App
 ## Description
-This project is a 
+This project is a Daily Planner. It is made to help plan out your day as well as show you the current time, splitting the times as well as past and future.
 
 ## Installation
 You can check the website at this link: https://adahollins.github.io/Daily-Planner-App/
 
 ## Usage
-To start the 
+To use it, simply write in the row where you'd like to do a chore, work, etc. Then when clicking the blue button, you can save the task so it'll be there no matter if you refresh or not. Therefore you cna use it for the whole day and not worry about it reseting if your browser suddenly closes.
 
 ## License
 MIT License
