@@ -21,17 +21,15 @@ input.addClass("description");
 
 saveBtn.addClass("saveBtn");
 
-$(saveBtn).on("click", function(event) {
+$(".container").append(textHours);
 
+var newsDiv = $('<div class="row time-block">').appendTo($(".container"));
+$(newsDiv).each(function() {
+    newsDiv.wrap("<div>");
+    newsDiv.append(input);
+    newsDiv.append(saveBtn); 
+    newsDiv.wrap("</div>");
 });
-
-    var newsDiv = $('<div class="row time-block">').appendTo($(".container"));
-    $(newsDiv).each(function() {
-        newsDiv.wrap("<div>");
-        newsDiv.append(input);
-        newsDiv.append(saveBtn); 
-        newsDiv.wrap("</div>");
-    });
 
 //Changes colour depending on time
 var currentTime = dayjs().format('hA');
@@ -44,6 +42,5 @@ if (textHours == currentTime) {
 };
 
 };
-
 
 });
